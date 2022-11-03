@@ -44,7 +44,6 @@ To make bot work with your own user profile:
 
 create `.env` file in the bot folder and add the following lines:
 ```
-TELEGRAM_API_TOKEN="5253426459:ABGZafP4BN1CySOqp5kC-eE2xr68K5WTWz4"
 API_ID="13207521"
 API_HASH="7f5012394534cb4a29123e123123548"
 phone="+7900xxxxxxxxx"
