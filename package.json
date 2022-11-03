@@ -1,0 +1,22 @@
+{
+  "name": "messagesorter",
+  "version": "0.0.1",
+  "description": "User bot that reads messages from users and bots and can sort and edit them and transmit to users / other channels.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "SorterBot"
+  },
+  "author": "Pxl_RS",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@mtproto/core": "6.2.0",
+    "dotenv": "^16.0.2",
+    "node-telegram-bot-api": "^0.59.0",
+    "path": "^0.12.7"
+  }
+}
