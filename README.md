@@ -50,11 +50,26 @@ After environment variables are set you're done and your bot will be online.
 
 How to set your channel:
 
+To find channel id: right click on any message in your chat and select 'Copy message link' option - link should be `https://t.me/c/10000000/12345` the number right after /c/ is your channel id.
+
 
 How to set your user/group to receive notifications:
 
+If you send your messages to yourself -  
+`const usrToFind =  await api.call('contacts.resolveUsername', {
+        username: 'YourUsername',
+      });`
+edit the `YourUsername` to your own one in the `bot.js` file. This tg account would receive messages from the bot.
 
 How to set up your own filters:
 
+Find the function startListener() and the loop inside it. Then find the lines   
+`if (message.message.includes('FILLED' )){
+sendMessage(recipient, editBotMsg(message.message))}`
+You can replace 'FILLED' with any word of your choice. All messages containing your keyword would be resent to your account set in the section above.
 
 How to edit messages: 
+
+All the logic of editing the message before sending it to the end user is set in the editBotMsg function. 
+to add some new words or remove old ones add or remove  `if (msg.includes('YourWord')) { ...  }` code blocks, 
+if these words should be replaced with anything just edit the  `newMsg = msg.replace('YourWords', 'NewWords')` line
