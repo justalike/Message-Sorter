@@ -49,7 +49,7 @@ API_HASH="7f5012394534cb4a29123e123123548"
 phone="+7900xxxxxxxxx"
 code="xxxx"
 ```
-Telegram API token is the authorization token you can get from the following link: 
+Telegram API ID and API HASH are the authorization token and its salt you can get from the following link: 
 
 https://my.telegram.org/auth?to=apps
 Login there with your preferred phone number, enter the confirmation code and you will see the following menu:
