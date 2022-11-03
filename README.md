@@ -1,9 +1,18 @@
 # Message-Sorter
 User bot that reads messages from users and bots and can sort and edit them and transmit to users / other channels.
 
+Dependencies:
+
+`Node.js`
+https://nodejs.org/en/
+
+`NPM (built in node.js package)` or
+`Yarn`
+https://yarnpkg.com/getting-started/install
 
 
-How to install:
+How to install the bot:
+
 Open console and execute the following commands:
 
 `mkdir Mybot`
