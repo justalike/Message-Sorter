@@ -166,9 +166,10 @@ class API {
 ///////  Any actions below would be executed 
 
     const allChats = await api.call('messages.getAllChats', {except_ids: 0})
-    const alarmsChatId = 0 // Chat ID - Chat which messages you are listening ---- howtofind?
+    const alarmsChatId = allChats.chats.find(chat => chat.id === '1258334322').flags  // edit the numbers `1258334322` to your own channel id. 
+    // to find channel id right click on any message in your chat and select `Copy message link` option - link should be like that: https://t.me/c/1258334322/12345 the number after /c/ is your channel id.
     const usrToFind =  await api.call('contacts.resolveUsername', {
-        username: 'Pxl_RS', // Put your username as 'username'
+        username: 'YourUsername', // Put your username as 'username' not @username mind the ' symbols.
       });
 
 
