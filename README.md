@@ -23,6 +23,8 @@ If you have git installed then you can just do:
 
 `git clone https://github.com/justalike/Message-Sorter.git`
 
+`cd Message-Sorter`
+
 or download zip file and extract it to Mybot folder.
 
 
