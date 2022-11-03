@@ -19,9 +19,14 @@ Open console and execute the following commands:
 
 `cd Mybot`
 
+If you have git installed then you can just do:
+
 `git clone https://github.com/justalike/Message-Sorter.git`
 
-depending on what modules manager you prefer you can do both
+or download zip file and extract it to Mybot folder.
+
+
+Depending on what modules manager you prefer you can do either
 
 `npm install`
 
@@ -29,11 +34,12 @@ or
 
 `yarn`
 
-After the modules been installed you would need to launch the bot with:
+After the modules have been installed you would need to launch the bot with:
 `node bot.js`
 
 
 To make bot work with your own user profile:
+
 create `.env` file in the bot folder and add the following lines:
 ```
 TELEGRAM_API_TOKEN="5253426459:ABGZafP4BN1CySOqp5kC-eE2xr68K5WTWz4"
@@ -43,6 +49,7 @@ phone="+7900xxxxxxxxx"
 code="xxxx"
 ```
 Telegram API token is the authorization token you can get from the following link: 
+
 https://my.telegram.org/auth?to=apps
 Login there with your preferred phone number, enter the confirmation code and you will see the following menu:
 ![test(1)](https://user-images.githubusercontent.com/44633493/199740770-f064d575-bf8b-4dda-9963-c5a7d3ff5dc9.png)
